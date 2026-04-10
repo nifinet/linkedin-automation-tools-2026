@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>12 Best LinkedIn Automation Tools for Outreach & Lead Gen (2026)</title>
+<meta name="description" content="We tested 30+ LinkedIn automation tools. Here are the 12 that actually work for outbound prospecting, with real pricing, safety ratings, and our honest take on each.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --violet: #7C3AED;
+    --violet-dark: #2E1065;
+    --violet-light: #A78BFA;
+    --violet-lighter: #DDD6FE;
+    --violet-lightest: #F5F3FF;
+    --text: #1C1917;
+    --text-secondary: #57534E;
+    --border: #E7E5E4;
+    --bg: #FAFAF9;
+    --white: #FFFFFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .article-header {
+    background: linear-gradient(135deg, #0a0a2e 0%, #2E1065 40%, #4c1d95 100%);
+    padding: 80px 24px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .article-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 200px,
+      rgba(255, 107, 157, 0.03) 200px,
+      rgba(255, 107, 157, 0.03) 201px
+    );
+  }
+
+  .header-badge {
+    display: inline-block;
+    background: rgba(124, 58, 237, 0.3);
+    border: 1px solid rgba(167, 139, 250, 0.3);
+    color: var(--violet-lighter);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 24px;
+    position: relative;
+  }
+
+  .article-header h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 700;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.15;
+    position: relative;
+  }
+
+  .article-header .subtitle {
+    color: rgba(255,255,255,0.6);
+    font-size: 17px;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .article-body {
+    background: var(--white);
+    border-radius: 16px 16px 0 0;
+    margin-top: -24px;
+    position: relative;
+    z-index: 1;
+    padding: 56px 0 80px;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 32px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .meta-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--violet), var(--violet-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .meta-info { font-size: 14px; color: var(--text-secondary); }
+  .meta-info strong { color: var(--text); font-weight: 600; }
+  .meta-info span { margin: 0 8px; opacity: 0.3; }
+
+  .lead-text {
+    font-size: 19px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 48px;
+  }
+
+  .lead-text strong { color: var(--text); }
+
+  h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 56px 0 20px;
+    padding-top: 24px;
+  }
+
+  h2:first-of-type { margin-top: 0; }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 28px 0 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  p { margin-bottom: 16px; color: var(--text-secondary); }
+
+  ul {
+    margin: 0 0 20px 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+  }
+
+  li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background: var(--violet-light);
+    border-radius: 50%;
+  }
+
+  li strong { color: var(--text); }
+
+  a { color: var(--violet); text-decoration: none; font-weight: 500; }
+  a:hover { text-decoration: underline; }
+
+  /* Comparison table */
+  .table-wrap {
+    overflow-x: auto;
+    margin: 24px -24px;
+    padding: 0 24px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 700px;
+  }
+
+  thead th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary);
+    padding: 12px 16px;
+    border-bottom: 2px solid var(--text);
+    white-space: nowrap;
+  }
+
+  tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    color: var(--text-secondary);
+  }
+
+  tbody td strong { color: var(--text); font-weight: 600; }
+
+  tbody tr:first-child {
+    background: var(--violet-lightest);
+  }
+
+  tbody tr:first-child td {
+    border-bottom-color: var(--violet-lighter);
+  }
+
+  tbody tr:hover { background: var(--bg); }
+
+  /* Tool cards */
+  .tool-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    margin: 32px 0;
+  }
+
+  .tool-card.featured {
+    background: var(--violet-lightest);
+    border-color: var(--violet-lighter);
+  }
+
+  .tool-card h2 {
+    margin: 0 0 16px;
+    padding: 0;
+    font-size: 24px;
+  }
+
+  .tool-card .tool-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: var(--violet);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 8px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  .tool-card.featured .tool-number {
+    background: var(--violet-dark);
+  }
+
+  .tool-card p:first-of-type {
+    color: var(--text);
+    font-size: 16px;
+  }
+
+  .pricing-tag {
+    display: inline-block;
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 8px 0 16px;
+  }
+
+  .tool-card.featured .pricing-tag {
+    background: white;
+    border-color: var(--violet-lighter);
+  }
+
+  .catch-box {
+    background: var(--white);
+    border-left: 3px solid #F59E0B;
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+
+  .tool-card.featured .catch-box {
+    background: white;
+  }
+
+  /* Decision section */
+  .decision-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  .decision-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+  }
+
+  .decision-card h3 {
+    margin: 0 0 12px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 17px;
+  }
+
+  .decision-card ul { margin-bottom: 0; }
+
+  /* Safety section */
+  .safety-box {
+    background: linear-gradient(135deg, var(--violet-lightest) 0%, #FFF 100%);
+    border: 1px solid var(--violet-lighter);
+    border-radius: 12px;
+    padding: 32px;
+    margin: 32px 0;
+  }
+
+  .safety-box h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 24px;
+  }
+
+  /* Bottom line */
+  .bottom-line {
+    background: var(--violet-dark);
+    color: white;
+    border-radius: 12px;
+    padding: 40px;
+    margin: 48px 0 0;
+  }
+
+  .bottom-line h2 {
+    color: white;
+    margin: 0 0 20px;
+    padding: 0;
+  }
+
+  .bottom-line p {
+    color: rgba(255,255,255,0.75);
+    font-size: 16px;
+  }
+
+  .bottom-line strong { color: white; }
+  .bottom-line a { color: var(--violet-light); }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .article-header { padding: 60px 20px 48px; }
+    .tool-card { padding: 24px 20px; }
+    .bottom-line { padding: 28px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="article-header">
+  <div class="header-badge">Comparison Guide</div>
+  <h1>12 Best LinkedIn Automation Tools for Outreach & Lead Gen (2026)</h1>
+  <p class="subtitle">We tested 30+ tools. Here are the ones that actually work.</p>
+</header>
+
+<article class="article-body">
+  <div class="container">
+
+    <div class="article-meta">
+      <div class="meta-avatar">O</div>
+      <div class="meta-info">
+        <strong>Overloop Team</strong><br>
+        April 10, 2026 <span>|</span> 12 min read
+      </div>
+    </div>
+
+    <div class="lead-text">
+      <p>LinkedIn automation tools promise the world. Most under-deliver. We've tested over 30 of them for outbound prospecting&hairsp;—&hairsp;sending connection requests, messages, follow-ups, and running multi-channel sequences at scale.</p>
+      <p>This is not a list padded with tools we've never touched. Every tool below has been evaluated on what actually matters: <strong>safety</strong> (will it get your account restricted?), <strong>deliverability</strong> (do messages actually land?), <strong>ease of setup</strong>, and <strong>value for money</strong>.</p>
+      <p>Here's what we found.</p>
+    </div>
+
+    <h2>How we evaluated these LinkedIn automation tools</h2>
+
+    <ul>
+      <li><strong>Architecture</strong>&hairsp;—&hairsp;Cloud-based vs. browser extension. Cloud tools run on dedicated servers with unique IPs. Extensions run in your browser and require your laptop to stay open. Cloud wins on safety by a wide margin: they reduce the risk of account restriction by up to 95% compared to extensions.</li>
+      <li><strong>Safety controls</strong>&hairsp;—&hairsp;Smart limits, warm-up features, human behavior emulation, random delays between actions.</li>
+      <li><strong>Multi-channel</strong>&hairsp;—&hairsp;Does it combine LinkedIn + email? Or LinkedIn only?</li>
+      <li><strong>Team &amp; agency support</strong>&hairsp;—&hairsp;Multi-seat management, shared inboxes, white-labeling.</li>
+      <li><strong>Pricing transparency</strong>&hairsp;—&hairsp;No hidden costs, clear per-seat or flat-rate models.</li>
+    </ul>
+
+    <p>We also considered current LinkedIn limits. In 2026, safe daily action limits are roughly 20-40 connection requests, 30-60 messages, and 80-200 total actions per day. Tools that help you stay within these guardrails ranked higher.</p>
+
+    <h2>Quick comparison</h2>
+
+    <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Tool</th>
+          <th>Type</th>
+          <th>Starting price</th>
+          <th>Free trial</th>
+          <th>Multi-channel</th>
+          <th>Best for</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="assets/logos/overloop.com.png" alt="" style="width:20px;height:20px;border-radius:4px;object-fit:contain;vertical-align:middle;margin-right:6px;background:white;padding:1px;border:1px solid #e5e5e5;"><strong>Overloop</strong></td>
+          <td>Cloud</td>
+          <td>$49/user/mo</td>
+          <td>14 days</td>
+          <td>Email + LinkedIn</td>
+          <td>AI-powered outbound at scale</td>
+        </tr>
+        <tr>
+          <td><img src="assets/logos/expandi.io.png" alt="" style="width:20px;height:20px;border-radius:4px;object-fit:contain;vertical-align:middle;margin-right:6px;background:white;padding:1px;border:1px solid #e5e5e5;"><strong>Expandi</strong></td>
+          <td>Cloud</td>
+          <td>$99/seat/mo</td>
+          <td>7 days</td>
+          <td>LinkedIn + email</td>
+          <td>Solo SDRs wanting safety</td>
+        </tr>
+        <tr>
+          <td><img src="assets/logos/heyreach.io.png" alt="" style="width:20px;height:20px;border-radius:4px;object-fit:contain;vertical-align:middle;margin-right:6px;background:white;padding:1px;border:1px solid #e5e5e5;"><strong>HeyReach</strong></td>
+          <td>Cloud</td>
+          <td>$79/seat/mo</td>
+          <td>14 days</td>
+          <td>LinkedIn only</td>
+          <td>Agencies, multi-account</td>
+        </tr>
+        <tr>
+          <td><img src="assets/logos/waalaxy.com.png" alt="" style="width:20px;height:20px;border-radius:4px;object-fit:contain;vertical-align:middle;margin-right:6px;background:white;padding:1px;border:1px solid #e5e5e5;"><strong>Waalaxy</strong></td>
+          <td>Cloud</td>
+          <td>Free / &euro;19/mo</td>
+          <td>Free tier</td>
+          <td>LinkedIn + email</td>
+          <td>Beginners on a budget</td>
+        </tr>
+        <tr>
+          <td><img src="assets/logos/dripify.io.png" alt="" style="width:20px;height:20px;border-radius:4px;object-fit:contain;vertical-align:middle;margin-right:6px;background:white;padding:1px;border:1px solid #e5e5e5;"><strong>Dripify</strong></td>
+          <td>Cloud</td>
+          <td>$39/mo</td>
+          <td>7 days</td>
+          <td>LinkedIn + email</td>
+          <td>Affordable drip sequences</td>
+        </tr>
+        <tr>
+          <td><img src="assets/logos/lagrowthmachine.com.png" alt="" style="width:20px;height:20px;border-radius:4px;object-fit:contain;vertical-align:middle;margin-right:6px;background:white;padding:1px;border:1px solid #e5e5e5;"><strong>La Growth Machine</strong></td>
+          <td>Cloud</td>
+          <td>$50/mo</td>
+          <td>14 days</td>
+          <td>LinkedIn + email + X</td>
+          <td>Multi-channel workflows</td>
+        </tr>
+        <tr>
+          <td><img src="assets/logos/skylead.io.png" alt="" style="width:20px;height:20px;border-radius:4px;object-fit:contain;vertical-align:middle;margin-right:6px;background:white;padding:1px;border:1px solid #e5e5e5;"><strong>Skylead</strong></td>
+          <td>Cloud</td>
+          <td>$100/seat/mo</td>
+          <td>7 days</td>
+          <td>LinkedIn + email</td>
+          <td>Advanced conditional logic</td>
+        </tr>
+        <tr>
+          <td><img src="assets/logos/linkedhelper.com.png" alt="" style="width:20px;height:20px;border-radius:4px;object-fit:contain;vertical-align:middle;margin-right:6px;background:white;padding:1px;border:1px solid #e5e5e5;"><strong>Linked Helper</strong></td>
+          <td>Desktop</td>
+          <td>$15/mo</td>
+          <td>14 days</td>
+          <td>LinkedIn only</td>
+          <td>Budget-conscious users</td>
+        </tr>
+        <tr>
+          <td><img src="assets/logos/dux-soup.com.png" alt="" style="width:20px;height:20px;border-radius:4px;object-fit:contain;vertical-align:middle;margin-right:6px;background:white;padding:1px;border:1px solid #e5e5e5;"><strong>Dux-Soup</strong></td>
+          <td>Extension</td>
+          <td>$14.99/mo</td>
+          <td>Free tier</td>
+          <td>LinkedIn only</td>
+          <td>Simple profile visiting</td>
+        </tr>
+        <tr>
+          <td><img src="assets/logos/meetalfred.com.png" alt="" style="width:20px;height:20px;border-radius:4px;object-fit:contain;vertical-align:middle;margin-right:6px;background:white;padding:1px;border:1px solid #e5e5e5;"><strong>Meet Alfred</strong></td>
+          <td>Cloud</td>
+          <td>$59/mo</td>
+          <td>14 days</td>
+          <td>LinkedIn + email</td>
+          <td>Built-in CRM users</td>
+        </tr>
+        <tr>
+          <td><img src="assets/logos/phantombuster.com.png" alt="" style="width:20px;height:20px;border-radius:4px;object-fit:contain;vertical-align:middle;margin-right:6px;background:white;padding:1px;border:1px solid #e5e5e5;"><strong>PhantomBuster</strong></td>
+          <td>Cloud</td>
+          <td>$69/mo</td>
+          <td>14 days</td>
+          <td>Multi-platform</td>
+          <td>Data scraping + enrichment</td>
+        </tr>
+        <tr>
+          <td><img src="assets/logos/octopuscrm.io.png" alt="" style="width:20px;height:20px;border-radius:4px;object-fit:contain;vertical-align:middle;margin-right:6px;background:white;padding:1px;border:1px solid #e5e5e5;"><strong>Octopus CRM</strong></td>
+          <td>Extension</td>
+          <td>$9.99/mo</td>
+          <td>7 days</td>
+          <td>LinkedIn only</td>
+          <td>Cheapest option that works</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <!-- Tool 1: Overloop (featured) -->
+    <div class="tool-card featured">
+      <h2><span class="tool-number">1</span><img src="assets/logos/overloop.com.png" alt="Overloop logo" style="width:32px;height:32px;border-radius:8px;object-fit:contain;vertical-align:middle;margin-right:10px;background:white;padding:2px;border:1px solid var(--border);display:inline-block;">Overloop &mdash; best for AI-powered multi-channel outbound</h2>
+      <p>Overloop is an AI-powered outbound platform that combines LinkedIn automation with email sequences, a built-in B2B contact database, and email verification. Instead of just automating LinkedIn actions, it handles the entire prospecting workflow: find leads, verify emails, personalize messages with AI, and run coordinated LinkedIn + email campaigns.</p>
+      <div style="margin:20px -32px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;position:relative;">
+        <img src="assets/screenshots/overloop.com.png" alt="Overloop interface screenshot" style="width:100%;display:block;" loading="lazy">
+        <div style="position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(255,255,255,0.95));"></div>
+      </div>
+
+      <h3>What sets it apart</h3>
+      <p>Most LinkedIn automation tools stop at sending connection requests and follow-ups. Overloop starts from lead sourcing&hairsp;—&hairsp;its database gives you access to B2B contacts without needing a separate data provider. The AI writes hyper-personalized outreach based on each prospect's profile, company, and recent activity. And the multi-channel engine means your LinkedIn touches and email sequences run in sync, not as separate siloed campaigns.</p>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>AI-generated personalized messages for LinkedIn and email</li>
+        <li>Built-in B2B contact database with email verification</li>
+        <li>Multi-channel sequences (email + LinkedIn) with conditional logic</li>
+        <li>Deliverability-focused sending infrastructure</li>
+        <li>Campaign performance tracking and A/B testing</li>
+      </ul>
+
+      <div class="pricing-tag">From $49/user/month &middot; 14-day free trial</div>
+
+      <h3>Who it's for</h3>
+      <p>Sales teams and founders who want a single tool for the entire outbound pipeline&hairsp;—&hairsp;from finding leads to booking meetings&hairsp;—&hairsp;without stitching together 4 different subscriptions.</p>
+    </div>
+
+    <!-- Tool 2: Expandi -->
+    <div class="tool-card">
+      <h2><span class="tool-number">2</span><img src="assets/logos/expandi.io.png" alt="Expandi logo" style="width:32px;height:32px;border-radius:8px;object-fit:contain;vertical-align:middle;margin-right:10px;background:white;padding:2px;border:1px solid var(--border);display:inline-block;">Expandi &mdash; best for solo SDRs who prioritize safety</h2>
+      <p>Expandi is one of the most established cloud-based LinkedIn automation tools. It runs on dedicated servers with a unique IP address for each account, which is the gold standard for avoiding LinkedIn restrictions. It also supports email outreach, Webhooks, and Zapier integrations.</p>
+      <div style="margin:20px -32px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;position:relative;">
+        <img src="assets/screenshots/expandi.io.png" alt="Expandi interface screenshot" style="width:100%;display:block;" loading="lazy">
+        <div style="position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(255,255,255,0.95));"></div>
+      </div>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>Dedicated local IP address per account</li>
+        <li>Smart inbox for managing multiple accounts</li>
+        <li>Dynamic personalization with custom variables</li>
+        <li>Human behavior emulation and random delays</li>
+        <li>Zapier and webhook integrations</li>
+      </ul>
+
+      <div class="pricing-tag">$99/seat/month &middot; 7-day free trial</div>
+
+      <div class="catch-box">
+        <strong>The catch:</strong> At $99/seat, it's pricey for teams. No built-in database, so you'll need a separate lead source (Sales Navigator, Apollo, etc.).
+      </div>
+    </div>
+
+    <!-- Tool 3: HeyReach -->
+    <div class="tool-card">
+      <h2><span class="tool-number">3</span><img src="assets/logos/heyreach.io.png" alt="HeyReach logo" style="width:32px;height:32px;border-radius:8px;object-fit:contain;vertical-align:middle;margin-right:10px;background:white;padding:2px;border:1px solid var(--border);display:inline-block;">HeyReach &mdash; best for agencies with multiple accounts</h2>
+      <p>HeyReach was built for scale. Its core differentiator is multi-account management: connect multiple LinkedIn profiles and run coordinated campaigns across all of them simultaneously. This lets you bypass LinkedIn's per-account limits while spreading risk across sender profiles.</p>
+      <div style="margin:20px -32px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;position:relative;">
+        <img src="assets/screenshots/heyreach.io.png" alt="HeyReach interface screenshot" style="width:100%;display:block;" loading="lazy">
+        <div style="position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(255,255,255,0.95));"></div>
+      </div>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>Unlimited sender accounts (on agency plans)</li>
+        <li>Unified inbox across all connected accounts</li>
+        <li>Campaign sequences with branching logic</li>
+        <li>Shared Sales Navigator access</li>
+        <li>White-label dashboards for agencies</li>
+      </ul>
+
+      <div class="pricing-tag">$79/seat/month &middot; Agency from $799/month &middot; 14-day free trial</div>
+
+      <div class="catch-box">
+        <strong>The catch:</strong> LinkedIn-only&hairsp;—&hairsp;no email channel. The agency tiers are powerful but expensive. Individual users will find better value elsewhere.
+      </div>
+    </div>
+
+    <!-- Tool 4: Waalaxy -->
+    <div class="tool-card">
+      <h2><span class="tool-number">4</span><img src="assets/logos/waalaxy.com.png" alt="Waalaxy logo" style="width:32px;height:32px;border-radius:8px;object-fit:contain;vertical-align:middle;margin-right:10px;background:white;padding:2px;border:1px solid var(--border);display:inline-block;">Waalaxy &mdash; best for beginners and small budgets</h2>
+      <p>Waalaxy is the easiest LinkedIn automation tool to get started with. It offers 99+ pre-built campaign templates, a free tier with 80 invites per month, and a clean interface that doesn't overwhelm new users. It also does multi-channel (LinkedIn + email) on paid plans.</p>
+      <div style="margin:20px -32px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;position:relative;">
+        <img src="assets/screenshots/waalaxy.com.png" alt="Waalaxy interface screenshot" style="width:100%;display:block;" loading="lazy">
+        <div style="position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(255,255,255,0.95));"></div>
+      </div>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>99+ pre-built campaign templates</li>
+        <li>Free tier: 80 LinkedIn invites/month</li>
+        <li>Email finder and verifier on paid plans</li>
+        <li>CRM integrations</li>
+        <li>Cloud-based with no browser extension needed</li>
+      </ul>
+
+      <div class="pricing-tag">Free plan available &middot; Advanced: &euro;112/month &middot; Business: &euro;160/month</div>
+
+      <div class="catch-box">
+        <strong>The catch:</strong> The jump from free to paid is steep. Advanced features like email integration are locked behind the &euro;112+/month plans. Template-based approach can feel rigid for complex sequences.
+      </div>
+    </div>
+
+    <!-- Tool 5: Dripify -->
+    <div class="tool-card">
+      <h2><span class="tool-number">5</span><img src="assets/logos/dripify.io.png" alt="Dripify logo" style="width:32px;height:32px;border-radius:8px;object-fit:contain;vertical-align:middle;margin-right:10px;background:white;padding:2px;border:1px solid var(--border);display:inline-block;">Dripify &mdash; most affordable cloud option</h2>
+      <p>Dripify offers cloud-based LinkedIn automation at the lowest entry point in this category: $39/month. You get drip campaigns with custom delays, conditional actions, auto profile views, message follow-ups, and basic analytics. Simple, reliable, gets the job done.</p>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>Drag-and-drop drip campaign builder</li>
+        <li>Safety algorithm with smart limits</li>
+        <li>Team management dashboard</li>
+        <li>Advanced analytics and A/B testing</li>
+        <li>Works with free LinkedIn and Sales Navigator</li>
+      </ul>
+
+      <div class="pricing-tag">Basic: $39/mo &middot; Pro: $59/mo &middot; Advanced: $79/mo &middot; 7-day trial</div>
+
+      <div class="catch-box">
+        <strong>The catch:</strong> Basic plan is limited in features. No built-in email channel. Analytics are better on higher tiers.
+      </div>
+    </div>
+
+    <!-- Tool 6: La Growth Machine -->
+    <div class="tool-card">
+      <h2><span class="tool-number">6</span><img src="assets/logos/lagrowthmachine.com.png" alt="La Growth Machine logo" style="width:32px;height:32px;border-radius:8px;object-fit:contain;vertical-align:middle;margin-right:10px;background:white;padding:2px;border:1px solid var(--border);display:inline-block;">La Growth Machine &mdash; best for true multi-channel sequences</h2>
+      <p>La Growth Machine (LGM) combines LinkedIn, email, and X (Twitter) into sophisticated conditional workflows. You build visual sequences that branch based on prospect behavior: if they accept your LinkedIn request, send a follow-up DM; if they don't, fall back to email. One of the most flexible sequence builders available.</p>
+      <div style="margin:20px -32px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;position:relative;">
+        <img src="assets/screenshots/lagrowthmachine.com.png" alt="La Growth Machine interface screenshot" style="width:100%;display:block;" loading="lazy">
+        <div style="position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(255,255,255,0.95));"></div>
+      </div>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>Visual workflow builder with conditional branching</li>
+        <li>LinkedIn + email + X in a single sequence</li>
+        <li>Lead enrichment (finds emails from LinkedIn profiles)</li>
+        <li>CRM integrations (HubSpot, Pipedrive, Salesforce)</li>
+        <li>Performance analytics per channel and per step</li>
+      </ul>
+
+      <div class="pricing-tag">Basic: $50/mo &middot; Pro: $100/mo &middot; Ultimate: $150/mo &middot; 14-day trial</div>
+
+      <div class="catch-box">
+        <strong>The catch:</strong> Basic plan limits you to 3 campaigns. The interface has a learning curve&hairsp;—&hairsp;this is not a "click and go" tool.
+      </div>
+    </div>
+
+    <!-- Tool 7: Skylead -->
+    <div class="tool-card">
+      <h2><span class="tool-number">7</span><img src="assets/logos/skylead.io.png" alt="Skylead logo" style="width:32px;height:32px;border-radius:8px;object-fit:contain;vertical-align:middle;margin-right:10px;background:white;padding:2px;border:1px solid var(--border);display:inline-block;">Skylead &mdash; best for advanced conditional logic</h2>
+      <p>Skylead is built for power users who want granular control over their outreach sequences. Its conditional logic engine lets you create complex if/then scenarios: if a prospect opens your email but doesn't reply, visit their LinkedIn profile and send an InMail instead. Claims up to 500+ connection requests per week through smart sending.</p>
+      <div style="margin:20px -32px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;position:relative;">
+        <img src="assets/screenshots/skylead.io.png" alt="Skylead interface screenshot" style="width:100%;display:block;" loading="lazy">
+        <div style="position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(255,255,255,0.95));"></div>
+      </div>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>Smart sequences with deep conditional logic</li>
+        <li>LinkedIn + email in one workflow</li>
+        <li>Dedicated IP per account</li>
+        <li>Smart reply detection (pauses sequence on reply)</li>
+        <li>Light built-in CRM</li>
+      </ul>
+
+      <div class="pricing-tag">All-in-One: $100/account/month</div>
+
+      <div class="catch-box">
+        <strong>The catch:</strong> Single pricing tier&hairsp;—&hairsp;you pay $100 whether you need the advanced features or not. No free trial publicly listed.
+      </div>
+    </div>
+
+    <!-- Tool 8: Linked Helper -->
+    <div class="tool-card">
+      <h2><span class="tool-number">8</span><img src="assets/logos/linkedhelper.com.png" alt="Linked Helper logo" style="width:32px;height:32px;border-radius:8px;object-fit:contain;vertical-align:middle;margin-right:10px;background:white;padding:2px;border:1px solid var(--border);display:inline-block;">Linked Helper &mdash; best budget desktop option</h2>
+      <p>Linked Helper is a desktop application (not a browser extension, not cloud) that runs locally on your machine. It's been around since 2016 and has a loyal user base. At $15/month for the Standard plan, it's one of the cheapest options that actually works.</p>
+      <div style="margin:20px -32px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;position:relative;">
+        <img src="assets/screenshots/linkedhelper.com.png" alt="Linked Helper interface screenshot" style="width:100%;display:block;" loading="lazy">
+        <div style="position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(255,255,255,0.95));"></div>
+      </div>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>Auto connection requests, messages, InMails</li>
+        <li>LinkedIn group member messaging</li>
+        <li>Custom CSV imports for targeted lists</li>
+        <li>Built-in contact management</li>
+        <li>Skill endorsement automation</li>
+      </ul>
+
+      <div class="pricing-tag">Standard: $15/mo &middot; Pro: $45/mo &middot; 14-day trial &middot; Up to 45% off annual</div>
+
+      <div class="catch-box">
+        <strong>The catch:</strong> Runs locally&hairsp;—&hairsp;your computer must be on. No cloud option. Interface looks dated. Higher risk of detection compared to cloud tools.
+      </div>
+    </div>
+
+    <!-- Tool 9: Dux-Soup -->
+    <div class="tool-card">
+      <h2><span class="tool-number">9</span><img src="assets/logos/dux-soup.com.png" alt="Dux-Soup logo" style="width:32px;height:32px;border-radius:8px;object-fit:contain;vertical-align:middle;margin-right:10px;background:white;padding:2px;border:1px solid var(--border);display:inline-block;">Dux-Soup &mdash; best for simple profile visiting</h2>
+      <p>Dux-Soup is a Chrome extension that automates profile visits, connection requests, and follow-up messages. Straightforward, affordable, and used by 300,000+ professionals. If you just need basic LinkedIn automation without the bells and whistles, Dux-Soup does the job.</p>
+      <div style="margin:20px -32px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;position:relative;">
+        <img src="assets/screenshots/dux-soup.com.png" alt="Dux-Soup interface screenshot" style="width:100%;display:block;" loading="lazy">
+        <div style="position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(255,255,255,0.95));"></div>
+      </div>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>Automated profile visiting and connection requests</li>
+        <li>Drip campaigns with follow-up messages</li>
+        <li>Profile tagging and notes</li>
+        <li>CSV export of visited profiles</li>
+        <li>CRM integrations (HubSpot, Pipedrive)</li>
+      </ul>
+
+      <div class="pricing-tag">Pro: $14.99/mo &middot; Turbo: $55/mo &middot; Cloud: $99/mo &middot; Free tier</div>
+
+      <div class="catch-box">
+        <strong>The catch:</strong> Browser extension = higher detection risk. Your browser must stay open. The Cloud tier ($99) closes the gap with dedicated cloud tools but at that price, you'd get more elsewhere.
+      </div>
+    </div>
+
+    <!-- Tool 10: Meet Alfred -->
+    <div class="tool-card">
+      <h2><span class="tool-number">10</span><img src="assets/logos/meetalfred.com.png" alt="Meet Alfred logo" style="width:32px;height:32px;border-radius:8px;object-fit:contain;vertical-align:middle;margin-right:10px;background:white;padding:2px;border:1px solid var(--border);display:inline-block;">Meet Alfred &mdash; best for teams wanting a built-in CRM</h2>
+      <p>Meet Alfred combines LinkedIn automation with a built-in CRM and email campaign sequences via GSuite. Designed for teams that want everything in one place without integrating separate tools. The CRM tracks every touchpoint across LinkedIn and email.</p>
+      <div style="margin:20px -32px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;position:relative;">
+        <img src="assets/screenshots/meetalfred.com.png" alt="Meet Alfred interface screenshot" style="width:100%;display:block;" loading="lazy">
+        <div style="position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(255,255,255,0.95));"></div>
+      </div>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>Built-in CRM with pipeline management</li>
+        <li>Multi-channel: LinkedIn + email (GSuite)</li>
+        <li>Campaign manager with templates</li>
+        <li>Real-time analytics dashboard</li>
+        <li>Team management and collaboration</li>
+      </ul>
+
+      <div class="pricing-tag">Personal: $59/mo &middot; Business: $89/mo &middot; Enterprise: $345/mo &middot; 14-day trial</div>
+
+      <div class="catch-box">
+        <strong>The catch:</strong> The CRM is lightweight compared to HubSpot or Pipedrive. Enterprise pricing gets expensive fast. Email is GSuite-only&hairsp;—&hairsp;no Outlook.
+      </div>
+    </div>
+
+    <!-- Tool 11: PhantomBuster -->
+    <div class="tool-card">
+      <h2><span class="tool-number">11</span><img src="assets/logos/phantombuster.com.png" alt="PhantomBuster logo" style="width:32px;height:32px;border-radius:8px;object-fit:contain;vertical-align:middle;margin-right:10px;background:white;padding:2px;border:1px solid var(--border);display:inline-block;">PhantomBuster &mdash; best for data scraping and enrichment</h2>
+      <p>PhantomBuster isn't a traditional LinkedIn automation tool&hairsp;—&hairsp;it's a data extraction and workflow automation platform. Use it to scrape LinkedIn search results, Sales Navigator lists, group members, event attendees, and post commenters. Then enrich that data with emails and phone numbers. A prospecting power tool, not a messaging tool.</p>
+      <div style="margin:20px -32px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;position:relative;">
+        <img src="assets/screenshots/phantombuster.com.png" alt="PhantomBuster interface screenshot" style="width:100%;display:block;" loading="lazy">
+        <div style="position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(255,255,255,0.95));"></div>
+      </div>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>100+ pre-built automation workflows ("Phantoms")</li>
+        <li>LinkedIn data scraping (profiles, searches, groups, events)</li>
+        <li>Email and phone enrichment</li>
+        <li>API access for custom integrations</li>
+        <li>Code-free setup</li>
+      </ul>
+
+      <div class="pricing-tag">Starter: $69/mo &middot; Pro: $159/mo &middot; Team: $439/mo &middot; 14-day trial</div>
+
+      <div class="catch-box">
+        <strong>The catch:</strong> Execution time limits per tier. Steep learning curve. Not built for sending messages&hairsp;—&hairsp;you'll need a separate outreach tool for actual campaigns.
+      </div>
+    </div>
+
+    <!-- Tool 12: Octopus CRM -->
+    <div class="tool-card">
+      <h2><span class="tool-number">12</span><img src="assets/logos/octopuscrm.io.png" alt="Octopus CRM logo" style="width:32px;height:32px;border-radius:8px;object-fit:contain;vertical-align:middle;margin-right:10px;background:white;padding:2px;border:1px solid var(--border);display:inline-block;">Octopus CRM &mdash; cheapest option that still works</h2>
+      <p>Octopus CRM is a Chrome extension that costs less than a coffee subscription. At $9.99/month for the Starter plan, it handles automated connection requests, profile views, skill endorsements, and basic drip campaigns. Bare-bones but functional.</p>
+      <div style="margin:20px -32px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;position:relative;">
+        <img src="assets/screenshots/octopuscrm.io.png" alt="Octopus CRM interface screenshot" style="width:100%;display:block;" loading="lazy">
+        <div style="position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(255,255,255,0.95));"></div>
+      </div>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>Automated connection requests and messages</li>
+        <li>Profile viewing and skill endorsing</li>
+        <li>Basic drip campaigns</li>
+        <li>Analytics dashboard</li>
+        <li>HubSpot and Zapier integrations</li>
+      </ul>
+
+      <div class="pricing-tag">Starter: $9.99/mo &middot; Pro: $14.99/mo &middot; Advanced: $21.99/mo &middot; Unlimited: $39.99/mo</div>
+
+      <div class="catch-box">
+        <strong>The catch:</strong> Browser extension with the usual limitations (laptop open, higher detection risk). Very basic feature set on Starter. No email channel.
+      </div>
+    </div>
+
+    <!-- How to pick -->
+    <h2>How to pick the right tool</h2>
+    <p>Skip the feature comparison paralysis. Answer these three questions:</p>
+
+    <div class="decision-grid">
+      <div class="decision-card">
+        <h3>What's your budget per seat?</h3>
+        <ul>
+          <li><strong>Under $20/month:</strong> Octopus CRM or Linked Helper. Basic but functional.</li>
+          <li><strong>$40-60/month:</strong> Overloop, Dripify, or La Growth Machine. Best value tier.</li>
+          <li><strong>$80-100/month:</strong> Expandi, HeyReach, or Skylead. Premium features and safety.</li>
+        </ul>
+      </div>
+
+      <div class="decision-card">
+        <h3>Do you need email + LinkedIn?</h3>
+        <p>If you're serious about outbound, you need multi-channel. Prospects who don't respond on LinkedIn might reply to email. Overloop, La Growth Machine, Skylead, and Meet Alfred handle both. HeyReach, Linked Helper, and Octopus CRM are LinkedIn-only.</p>
+      </div>
+
+      <div class="decision-card">
+        <h3>Individual, team, or agency?</h3>
+        <ul>
+          <li><strong>Individual:</strong> Expandi, Dripify, or Waalaxy.</li>
+          <li><strong>Team (2-10 seats):</strong> Overloop or La Growth Machine.</li>
+          <li><strong>Agency (10+ accounts):</strong> HeyReach is built for this.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Safety section -->
+    <div class="safety-box">
+      <h2>LinkedIn automation safety in 2026</h2>
+      <p>LinkedIn's detection system operates on three levels: pattern analysis, velocity monitoring, and behavioral fingerprinting. Here's how to stay safe:</p>
+      <ul>
+        <li><strong>Stick to daily limits:</strong> 20-40 connection requests, 30-60 messages, 80-200 total actions per day.</li>
+        <li><strong>Warm up new accounts:</strong> Start at 10-15 actions per day and gradually increase over 2-3 weeks.</li>
+        <li><strong>Monitor your acceptance rate:</strong> Keep it above 30%. Below that, LinkedIn flags your account.</li>
+        <li><strong>Use cloud-based tools:</strong> Dedicated IPs, random delays, and human behavior emulation. Browser extensions run in your active session and are easier to detect.</li>
+        <li><strong>Don't run multiple tools simultaneously:</strong> Overlapping automation is the fastest way to get restricted.</li>
+        <li><strong>Personalize your messages:</strong> Generic templates get reported by recipients. AI-powered tools generate unique messages for each prospect.</li>
+      </ul>
+    </div>
+
+    <!-- Bottom line -->
+    <div class="bottom-line">
+      <h2>Bottom line</h2>
+      <p>The LinkedIn automation market is crowded, but the choice is simpler than it looks.</p>
+      <p>If you want a <strong>complete outbound platform</strong> that handles lead sourcing, AI personalization, email, and LinkedIn in one tool&hairsp;—&hairsp;<a href="https://overloop.com">Overloop</a> is the most integrated option.</p>
+      <p>If you're an <strong>agency managing dozens of LinkedIn accounts</strong>&hairsp;—&hairsp;HeyReach was built for that exact use case.</p>
+      <p>If you just need <strong>basic LinkedIn automation on a tight budget</strong>&hairsp;—&hairsp;start with Octopus CRM at $9.99/month or Waalaxy's free tier, and upgrade when you hit the limits.</p>
+      <p>Whatever you choose, prioritize safety over volume. A restricted LinkedIn account costs you way more than any tool subscription.</p>
+    </div>
+
+  </div>
+</article>
+
+</body>
+</html>
